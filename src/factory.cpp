@@ -14,3 +14,18 @@ public:
     virtual std::string render() const = 0;
     virtual ~Scrollbar() = default;
 };
+
+class WindowsWindow : public Window {
+    public:
+        std::string render() const override {
+            return "Rendering Windows Window";
+        }
+    };
+    
+    class WindowsScrollbar : public Scrollbar {
+    public:
+        std::string render() const override {
+            return "Rendering Windows Scrollbar";
+        }
+    };
+    
